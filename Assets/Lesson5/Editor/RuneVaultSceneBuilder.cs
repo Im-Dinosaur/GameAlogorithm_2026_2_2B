@@ -18,6 +18,8 @@ namespace AlgoCourse.Lesson5.Editor
 
         private static void BuildOnce()
         {
+            if (EditorApplication.isPlayingOrWillChangePlaymode ||
+                System.IO.File.Exists("Assets/Lesson5/Scenes/Lesson05_RuneVault.unity")) return;
             const string key = "AlgoCourse.Lesson5.RuneVaultSceneBuilt.V1";
             if (SessionState.GetBool(key, false)) return;
             SessionState.SetBool(key, true);

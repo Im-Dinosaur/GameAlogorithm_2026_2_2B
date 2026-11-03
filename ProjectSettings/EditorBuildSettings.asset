@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Lesson5/Scenes/Lesson05_RuneVault.unity
     guid: 1b99c8ec70e647f47a5efc2d91067690
+  - enabled: 1
+    path: Assets/Lesson2/Scenes/Lesson02_ParcelScanner.unity
+    guid: 5a50e30c5565b5941b4f2a4afec71ea8
+  - enabled: 1
+    path: Assets/Lesson6/Scenes/Lesson06_AlgorithmPoker.unity
+    guid: ea5a7fcdbcb33234b92a885f7543840e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

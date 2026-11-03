@@ -18,6 +18,8 @@ namespace AlgoCourse.Lesson4.Editor
 
         private static void BuildOnce()
         {
+            if (EditorApplication.isPlayingOrWillChangePlaymode ||
+                System.IO.File.Exists("Assets/Lesson4/Scenes/Lesson04_BurningLabRescue.unity")) return;
             const string key = "AlgoCourse.Lesson4.RescueMissionBuilt.V1";
             if (SessionState.GetBool(key, false)) return;
             SessionState.SetBool(key, true);

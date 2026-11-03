@@ -121,7 +121,7 @@ namespace AlgoCourse.StudentWork
                 }
             }
 
-            return 0;
+            return count;
         }
 
         public bool Remove(int id)

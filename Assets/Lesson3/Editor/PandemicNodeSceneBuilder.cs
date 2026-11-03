@@ -18,6 +18,8 @@ namespace AlgoCourse.Lesson3.Editor
 
         private static void BuildOnce()
         {
+            if (EditorApplication.isPlayingOrWillChangePlaymode ||
+                System.IO.File.Exists("Assets/Lesson3/Scenes/Lesson03_PandemicNodes.unity")) return;
             const string key = "AlgoCourse.Lesson3.PandemicNodeSceneBuilt.V1";
             if (SessionState.GetBool(key, false)) return;
             SessionState.SetBool(key, true);

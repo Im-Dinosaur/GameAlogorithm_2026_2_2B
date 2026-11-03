@@ -33,7 +33,7 @@ namespace AlgoCourse.StudentWork
 
             // TODO 03: 탐색 단계와 정답을 반환합니다.
             return new RuneSolveResult(
-                new List<RuneSearchStep>(),
+                new List<RuneSearchStep>(steps),
                 solved ? new List<int>(selectedRuneIds) :
                 new List<int>());
         }
